@@ -1,0 +1,44 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "ignorePatterns": ["node_modules", "public", "tsconfig.json", "*.config.js", "server.js", ".*", "*.db", "*.md"],
+  "globals": {
+    "React": "writable"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "useTab": false,
+        "endOfLine": "auto"
+      }
+    ],
+    "no-console": "off",
+    "no-useless-catch": "off",
+    "no-explicit-any": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx", ".js", ".jsx"] }],
+    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/prop-types": "off",
+    "prefer-const": "warn",
+    "@typescript-eslint/semi": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-types": "warn",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-this-alias": "warn",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "warn"
+  }
+}
